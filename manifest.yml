@@ -1,0 +1,10 @@
+---
+applications:
+- name: go-tick
+  memory: 256M
+  disk_quota: 256M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git#v1.8.29
+  env:
+    GOVERSION: go1.11.2
+    GOPACKAGENAME: go-tick/main
